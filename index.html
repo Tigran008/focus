@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="focus.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>TendeL</title>
+    <style>
+        body{
+            background-color: #ccc;
+            overflow-y: hidden;
+        }
+        .navbar{
+            background-color: #ccc;
+        }
+        .logo{
+            height: 50px;
+            padding: 1px;
+        }
+        .section{
+            margin-top: 66px;
+            
+        }
+        .fon{
+            width: 100%;
+            height: 680px;
+        }
+        .textimg{
+            position:absolute;
+        }
+        .textimg h3{
+          text-align: center;
+            background-color: black;
+            display: block;
+            margin-top: 520px;
+            color: white;
+        }
+        .container{
+            border: 1.5px solid black;
+            background-color: #fff;
+            height: 1200px;
+            display: flex;
+            justify-content: center;
+        }
+        .title{
+          border-bottom: 1.5px solid #ccc;
+            padding-top: 20px;
+        }
+        .TendeL{
+            margin-top: 15px;
+        }
+        .moves{
+            margin-top: 100px;
+            border: 1.5px solid black;
+            height: 300px;
+        }
+
+        
+
+    
+    </style>
+</head>
+<body>
+    <div class="section">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <img src="FOR_WEB_LOGO.png" alt="LOGO" class="logo">
+        <span class="TendeL">TendeL </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse col-lg-8 offset-lg-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+              
+            </li>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </ul>
+                
+        </div>
+          </ul>
+          
+      </nav>
+    </div>
+</div>
+      
+      
+      
+   <div class="container col-lg-10">
+      <!-- patuhan 1 -->
+        <div class="moves col-lg-6 col-md-8" id="myDIV1" style="display: block;">
+            <p class="mt-5">Ողջույն!Դու հիմա կարդում ես այս տեքստը, ուրեմն նշանակում է, որ ցանկանում ես տեսնել 
+              մեր կախարդական հնարքները: Խնդրում ենք, 
+              որ քայլ առ քայլ կատարես մեր հրահանգները, որպեսզի մեր ֆոկուսը հաջողվի!<br>
+              Դե ինչ, արի առդեն սկսենք:
+              Եթե պատրաստ ես, ապա սեղմիր ներքևում «Առաջ» կոճակը
+            </p>
+        </div>
+
+        <!-- patuhan 2 -->
+        <div class="moves col-lg-6 col-md-8" id="myDIV2" style="display: none;">
+          <p class="mt-5">
+            Մտապահիր մեկ եռանիշ թիվ, այնուհետև վերցրու այդ եռանիշ թիվը և դիր այն կողք կողքի այնպես, 
+            որ ստացվի մեկ ընդհանուր վեցանիշ թիվ(Օր.՝ վերցրել ենք 216 թիվը => 216216 պետք է դարձնենք վեցանիշ թիվ)
+          </p>
+        </div>
+          <!-- patuhan 3 -->
+        <div class="moves col-lg-6 col-md-8" id="myDIV3" style="display: none;">
+            <p class="mt-5">
+            Ստացված վեցանիշ թիվը բաժանիր 11-ի (Օր.՝ 216216/11 = 19656) և մտապահիր ստացված թիվը
+            </p>
+      </div>
+
+      <!-- patuhan 4 -->
+      <div class="moves col-lg-6 col-md-8" id="myDIV4" style="display: none;">
+        <p class="mt-5">
+       Նախորդ գործողությունը կատարելուց հետո մտապահած թիվը բաժանիր 13-ի (Օր.՝ 19656/13 = 1512) 
+       և մտապահիր ստացված թիվը
+        </p>
+  </div>
+
+  <!-- patuhan 5 -->
+  <div class="moves col-lg-6 col-md-8" id="myDIV5" style="display: none;">
+    <p class="mt-5">
+   Նախորդ գործողությունը կատարելուց հետո մտապահած թիվը բազմապատկիր 2-ով(Օր.՝ 1512 x 2 = 3024)<br>
+   Իսկ հիմա ժամանակն է բացահայտելու քո մտապահած եռանիշ թիվը: Ստացածդ թիվը մուտքագրիր
+   ներքևի հատվածում տեղադրված տողում, ապա սեղմիր «Առաջ» 
+   
+    </p>
+</div>
+   </div>
+
+
+      <nav class="navbar fixed-bottom navbar-dark bg-dark col-lg-10 offset-lg-1">
+        <div class="container-fluid">
+          <!-- btn1 -->
+          <button id="het1" onclick="het1()" type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>  Հետ</button>
+        
+          <button id="araj1" onclick="araj1()" type="button" class="btn btn-light">Առաջ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg></button>
+
+          <!-- btn2 -->
+          <button style="display: none;" id="het2" onclick="het2()" type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>  Հետ</button>
+          
+          <button style="display: none;" id="araj2" onclick="araj2()" type="button" class="btn btn-light">Առաջ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg></button>
+        
+           <!-- btn3 -->
+           <button style="display: none;" id="het3" onclick="het3()" type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>  Հետ</button>
+          
+          <button style="display: none;" id="araj3" onclick="araj3()" type="button" class="btn btn-light">Առաջ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg></button>
+
+           <!-- btn4 -->
+           <button style="display: none;" id="het4" onclick="het4()" type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>  Հետ</button>
+          
+          <button style="display: none;" id="araj4" onclick="araj4()" type="button" class="btn btn-light">Առաջ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg></button>
+
+           <!-- btn5 -->
+           <button style="display: none;" id="het5" onclick="het5()" type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>  Հետ</button>
+          <input  type="text" class="col-lg-8 col-md-7 col-sm-6 col-5" id="inptext" style="display: none;">
+          <button style="display: none;" id="araj5" onclick="araj5()" type="button" class="btn btn-light">Առաջ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg></button>
+        </div>
+      </nav>
+
+
+
+    <script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
